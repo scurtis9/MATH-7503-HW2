@@ -1,0 +1,63 @@
+\documentclass{article}
+
+\begin{document}
+
+\section{Problem 9.14.7}
+$n_1$ people are given treatment 1 and $n_2$ people are given treatment 2. Let $X_1$ be the number of people on treatment 1 who respond favorably to the treatment and let $X_2$ be the number of people on treatment 2 who respond favorably. Assume that $X_{1} \sim$ Binomial $(n_{1},p_{1}) X_{2} \sim$ Binomial $(n_{2}, p_{2})$. Let $\psi = p_{1}-p_{2}$. 
+
+\paragraph*{(a) Find the MLE $\hat{\psi}$ for $\psi$}
+
+\paragraph*{(b) Find the Fisher Information matrix $I(p_{1},p_{2})$}
+
+\paragraph*{(c) Use the multiparameter delta method to find the asymptotic standard error of $\hat{\psi}$}
+
+\paragraph*{(d) Suppose that $n_{1} = n_{2} = 200$, $X_{1} = 160$ and $X_{2} = 148$. Find $\hat{\psi}$. Find an approximate 90 percent confidence interval for $\psi$ using (i) the delta method and (ii) the parametric bootstrap.}
+
+
+\section{Problem 9.14.8}
+Find the Fisher Information matrix for Example 9.29. Let $X_{1}, \ldots, X_{n} \sim N (\mu,\sigma^{2})$. Let $\tau = g(\mu,\sigma) = \frac{\sigma}{\mu}$.
+
+
+
+
+
+\section{Problem 9.14.9}
+Let $X_{1}, \ldots, X_{n} \sim N(\mu,1)$. Let $\theta = e^{\mu}$ and let $\hat{\theta} = e^{\overline{X}}$ be the MLE. Create a data set (using $\mu = 5$) consisting of $n = 100$ observations. 
+
+\paragraph*{(a) Use the delta method to get $\hat{se}$ and a 95 percent confidence interval for $\theta$. Use the parametric bootstrap to get $\hat{se}$ and a 95 percent confidence interval for $\theta$. Use the nonparametric bootstrap to get $\hat{se}$ and a 95 percent confidence interval for $\theta$. Compare your answers}
+
+\paragraph*{(b) Plot a histogram of the bootstrap replications for the parametric and nonparametric bootstraps. Which approximation is closer to the true distribution?}
+
+
+\section{Problem 7.4.2}
+Let $X_{1}, \ldots, X_{n} \sim$ Bernoulli $(p)$ and let $Y_{1}, \ldots, Y_{m} \sim$ Bernoulli $(q)$. Find the plug-in estimator and estimated standard error for $p$. Find an approximate 90 percent confidence interval for $p$. Find the plug-in estimator and estimated standard error for $p - q$. Find the approximate 90 percent confidence interval for $p - q$. 
+
+
+
+
+\section{Problem 7.4.7}
+
+
+
+
+
+\section{Problem 7.4.9}
+
+
+
+
+
+\section{Problem 8.6.1}
+
+
+
+
+
+\section{Problem 8.6.2}
+
+
+
+
+\section{Problem 8.6.6}
+
+\end{document}
