@@ -56,6 +56,17 @@
 $n_1$ people are given treatment 1 and $n_2$ people are given treatment 2. Let $X_1$ be the number of people on treatment 1 who respond favorably to the treatment and let $X_2$ be the number of people on treatment 2 who respond favorably. Assume that $X_{1} \sim$ Binomial $(n_{1},p_{1}) X_{2} \sim$ Binomial $(n_{2}, p_{2})$. Let $\psi = p_{1}-p_{2}$. 
 
 \paragraph*{(a) Find the MLE $\hat{\psi}$ for $\psi$}
+First, we find the MLE for $p_{1}$ and $p_{2}$ separately. We get
+
+$$\hat{p_{1}} = \frac{\overline{X_{n}}}{n_{1}}$$
+
+$$\hat{p_{2}} = \frac{\overline{X_{n}}}{n_{2}}$$
+
+Then, by equivariance theorem
+
+$$\hat{\psi} = \hat{p_{1}} - \hat{p_{2}} = \frac{\overline{X_{n}}}{n_{1}} - \frac{\overline{X_{n}}}{n_{2}}$$
+
+
 
 \paragraph*{(b) Find the Fisher Information matrix $I(p_{1},p_{2})$}
 
@@ -86,28 +97,36 @@ Let $X_{1}, \ldots, X_{n} \sim$ Bernoulli $(p)$ and let $Y_{1}, \ldots, Y_{m} \s
 
 
 \section{Problem 7.4.7}
-
+Estimate the CDF $F(x)$. Compute and plot a 95 percent confidence envelop for $F$. Find an approximate 95 percent confidence interval for $F(4.9) - F(4.3)$.
 
 
 
 
 \section{Problem 7.4.9}
-
+100 people are given a standard antibiotic to treat an infection and another 100 are given a new antibiotic. In the first group, 90 people recover; in the second group, 85 people recover. Let $p_{1}$ be the probability of recovery under the standard treatment and let $p_{2}$ be the probability of recovery under the new treatment. We are interested in estimating $\theta = p_{1} - p_{2}$. Provide an estimate, standard error, an 80 percent confidence interval, and a 95 percetn confidence interval for $\theta$.
 
 
 
 
 \section{Problem 8.6.1}
-
+Consider the data in example 8.6. Find the plug-in estimate of the correlation coefficient. Estimate the standard error using the bootstrap. Find the 95 percent confidence interval using the Normal, pivotal, and percentile methods.
 
 
 
 
 \section{Problem 8.6.2}
-
+Let $n = 50$ and let $T(F) = \frac{\int (x - \mu)^{3}dF(x)}{\sigma^{3}}$ be the skewness. Draw $Y_{1}, \ldots, Y_{n} \sim N(0,1)$ and set $X_{i} = e^{Y_{i}}, i = 1, \ldots, n$. Construct the three types of bootstrap 95 percent intervals for $T(F)$ from the data $X_{1}, \ldots, X_{n}$. Repeat many times and estimate the true coverage of the three intervals. 
 
 
 
 \section{Problem 8.6.6}
+Let $X_{1}, \ldots, X_{n}$ Normal $(\mu,1)$. Let $\theta = e^{\mu}$ and let $\hat{\theta} = e^{\overline{X}}$. Create a data set (using $\mu = 5$) consisting of $n = 100$ observations.
+
+\paragraph*{(a) Use the bootstrap to get the $se$ and 95 percent confidence interval for $\theta$.}
+
+
+\paragraph*{(b) Plot a histogram of the bootstrap replications. This is an estimate of the distribution of $\hat{\theta}$. Compare this to the true sampling distribution of $\hat{\theta}$.}
+
+
 
 \end{document}
